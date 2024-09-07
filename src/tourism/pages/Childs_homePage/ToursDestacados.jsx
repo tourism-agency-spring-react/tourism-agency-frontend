@@ -1,5 +1,5 @@
 import gsap from 'gsap'
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 
 export const ToursDestacados = () => {
     let imagenParis = "https://s3-alpha-sig.figma.com/img/ac96/cbaa/ea917390e5b5d1f24fd28cac40ff8bab?Expires=1723420800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JT30Y3rfhiB4rUZ8cwAy8aNw9DxkSpRgJgWdiCfKo28OA3Cjh5rlqHl93kg7kdQc2s54YaQIgmvwNepn9dDxJtJfh3KzMz7m6pxT2AknAr7ZGDD3vugA9lQPMgT7oJrSvAF9~vzO1eI2QwqRRtIZY1yzTPVEcCRo45n61FHUzk5hstOpyNv53WFESPZtLUY7zpZTTCU6xSLxTha-a0aJIMDS-mKJduveQGX8v-M3kbbCDd8Cz~sguk7HibJeR-lRuJVS52lu-M-fl0h9BQcSxjMshHW21p88OuEpgGzQGLbtZifsL6uoj3So1Yd9FQ63wifxWcOt9nmyP~f8Wexxgw__"
@@ -12,7 +12,7 @@ export const ToursDestacados = () => {
 
     useEffect(()=> {
 		El.from(".ElemTour", {
-			opacity: 0,
+			opacity: 100,
 			translateY: "-3rem",
 			duration: 2
 		})
@@ -20,9 +20,8 @@ export const ToursDestacados = () => {
 
 	},[])
 
-
     return (
-        <div className='ElemTour'>
+        <div className='ElemTour opacity-0'>
             <p className=' font-bold text-[1.5rem] flex justify-center text-[#6347F9]'> Tour Destacados!</p>
             <h2 className="text-[2rem] font-bold flex justify-center">Lugares hermosos alrededor del mundo</h2>
             <div className=" mx-auto py-[3rem]   max-w-[1200px] flex justify-center h-[60vh]">

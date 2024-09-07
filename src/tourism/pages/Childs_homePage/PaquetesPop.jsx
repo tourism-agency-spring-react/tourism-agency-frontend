@@ -1,5 +1,5 @@
 import gsap from 'gsap';
-import React, { useEffect } from 'react'
+import { useEffect } from 'react'
 import { FaStar } from "react-icons/fa";
 export const PaquetesPop = () => {
     let imagen_por_defecto = "https://via.placeholder.com/300"
@@ -10,12 +10,10 @@ export const PaquetesPop = () => {
 
     useEffect(()=> {
 		El.from(".El", {
-			opacity: 0,
+			opacity: 100,
 			translateY: "-3rem",
 			duration: 2
 		})
-		
-
 	},[])
 
 
@@ -23,7 +21,7 @@ export const PaquetesPop = () => {
     return (
 
 
-        <section className='El h-[30vh] pt-[5rem] '>
+        <section className='El opacity-0 h-[30vh] pt-[5rem] '>
 
             <p className='font-bold text-[1.5rem]     flex justify-center text-[#6347F9]'>Paquetes Populares</p>
             <h2 className="text-[2rem] font-bold flex justify-center pb-[2rem]">Consulta nuestros paquetes</h2>

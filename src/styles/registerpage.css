@@ -2,11 +2,12 @@
     display: flex;
     height: 100vh;
   }
+
   .register-form {
-    width: 40%;
+    width: 100%;
     padding: 20px;
     box-sizing: border-box;
-    background-color: #f4f4f4;
+    background-color: #ffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
