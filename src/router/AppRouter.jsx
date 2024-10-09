@@ -5,7 +5,8 @@ import { LoginPage } from '../auth/pages/LoginPage';
 import { RegisterPage } from '../auth/pages/RegisterPage';
 import { HomePage } from '../tourism/pages/HomePage';
 import { HomeLayout } from '../tourism/layouts/HomeLayout';
-import { Services } from '../tourism/pages/Services';
+import Servicios from '../tourism/pages/servicios/Servicios';
+import Paquetes from '../tourism/pages/paquetes/Paquetes';
 
 export const router = createBrowserRouter([
 	{
@@ -20,7 +21,15 @@ export const router = createBrowserRouter([
 			},
 			{
 				path: '/services',
-				element: <Services />,
+				element: <Servicios />,
+			},
+			{
+				path: '/paquetes',
+				element: <Paquetes />,
+			},
+			{
+				path: '/contacto',
+				element: "contactos",
 			},
 		],
 	},

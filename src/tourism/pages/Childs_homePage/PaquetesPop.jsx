@@ -16,6 +16,17 @@ export const PaquetesPop = () => {
 		})
 	},[])
 
+    const datos = [
+        {
+            id: 32,
+            name: "Piscina",
+            price: 100,
+            img: imagen_piscina,
+            description: "Disfrute del lugar de belleza en la ciudad de Grecia",
+        },
+        
+
+    ]
 
 
     return (
@@ -29,7 +40,6 @@ export const PaquetesPop = () => {
                 <div className='flex flex-col '>
                     <img className='h-auto w-[300px]' src={imagen_piscina || imagen_por_defecto} alt="" />
                     <div className='flex gap-[2rem] items-center max-w-[321px]'>
-
                         <p>Disfrute del lugar de belleza en la ciudad de Grecia</p>
                     </div>
                     <div className='flex gap-[2rem] items-center max-w-[321px] justify-center'>
