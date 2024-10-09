@@ -12,11 +12,11 @@ export const navLinks =[
 	{
 		id:3,
 		name: 'Acerca de',
-		link: '/about'
+		link: '/paquetes'
 	},
 	{
 		id: 4,
 		name: 'Contacto',
-		link: '/contact'
+		link: '/contacto'
 	}
 ]
